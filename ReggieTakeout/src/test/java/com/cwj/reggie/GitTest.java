@@ -9,5 +9,6 @@ public class GitTest {
     public void main(){
         log.info("Hello World");
         log.info("Hello Git");
+        log.info("Hello Td");
     }
 }
