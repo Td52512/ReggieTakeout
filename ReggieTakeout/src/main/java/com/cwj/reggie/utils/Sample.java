@@ -30,12 +30,14 @@ public class Sample {
     }
 
     public static void main(String[] args_) throws Exception {
+
+
         // 工程代码泄露可能会导致AccessKey泄露，并威胁账号下所有资源的安全性。以下代码示例仅供参考，建议使用更安全的 STS 方式，更多鉴权访问方式请参见：https://help.aliyun.com/document_detail/378657.html
-        com.aliyun.dysmsapi20170525.Client client = Sample.createClient("LTAI5tQ8toY6FgdbTF74EAfu", "M3SpqXxspwC9C1KnlLlJNRvsh4Otsq");
+        com.aliyun.dysmsapi20170525.Client client = Sample.createClient("", "");
         com.aliyun.dysmsapi20170525.models.SendSmsRequest sendSmsRequest = new com.aliyun.dysmsapi20170525.models.SendSmsRequest()
                 .setSignName("阿里云短信测试")
-                .setTemplateCode("SMS_154950909")
-                .setPhoneNumbers("15871240437")
+                .setTemplateCode("")
+                .setPhoneNumbers("")
                 .setTemplateParam("{\"code\":\"6666\"}");
         com.aliyun.teautil.models.RuntimeOptions runtime = new com.aliyun.teautil.models.RuntimeOptions();
         try {

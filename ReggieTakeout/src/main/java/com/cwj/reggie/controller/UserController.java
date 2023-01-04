@@ -38,7 +38,7 @@ public class UserController {
             String code = ValidateCodeUtils.generateValidateCode(4) + "";
             log.info("code：{}", code);
             //调用阿里云api发送短信
-            if ("15871240437".equals(phone)) {
+            if ("".equals(phone)) {
                 Sample.sendMsg(code);
             }
             //将生成的验证码保存到session
