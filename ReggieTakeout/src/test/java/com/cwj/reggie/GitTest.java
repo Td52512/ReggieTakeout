@@ -13,5 +13,6 @@ public class GitTest {
         log.info("hot-fix");
         log.info("master-test");
         log.info("hot-fix-test");
+        log.info("push test");
     }
 }
