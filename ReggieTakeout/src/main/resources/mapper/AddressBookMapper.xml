@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwj.reggie.mapper.AddressBookMapper">
+    <update id="updateDefaultByUid">
+        update address_book
+        set is_default = 0
+        where user_id = #{uid}
+    </update>
+
+    <update id="setDefaultAddress">
+        update address_book
+        set is_default = 1
+        where id = #{id}
+    </update>
+</mapper>

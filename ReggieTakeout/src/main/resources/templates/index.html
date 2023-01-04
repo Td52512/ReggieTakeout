@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>自动联网程序</title>
+</head>
+
+<body>
+<form action="http://172.16.1.2/login?id=1" method="post" id="sub">
+  <input type="text" name="username" >
+  <br>
+  <input type="text" name="password">
+  <br>
+</form>
+
+<script>
+  document.querySelector("#sub").submit()
+</script>
+
+</body>
+</html>
